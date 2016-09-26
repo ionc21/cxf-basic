@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:jaxws="http://cxf.apache.org/jaxws"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd
+        http://www.springframework.org/schema/osgi http://www.springframework.org/schema/osgi/spring-osgi.xsd">
+
+
+    <jaxws:endpoint id="HTTPEndpoint"
+        implementor="com.pgs.soap.PersonImpl"
+        address="/PersonService"
+        wsdlLocation="wsdl/person.wsdl"
+        endpointName="e:soap"
+        serviceName="s:PersonService"
+        xmlns:e="http://servicemix.apache.org/samples/wsdl-first"
+        xmlns:s="http://servicemix.apache.org/samples/wsdl-first"/>
+
+<!--
+    <jaxws:client id="client"
+         serviceClass="org.apache.servicemix.samples.wsdl_first.Person"
+        endpointName="e:soap"
+        serviceName="s:PersonService"
+        xmlns:e="http://cxf.examples.servicemix.apache.org/"
+        xmlns:s="http://cxf.examples.servicemix.apache.org/"
+         wsdlLocation="wsdl/person.wsdl"
+         address="/PersonService"/>
+
+    <osgi:service id="testHelloWorld" ref="client"
+        interface="org.apache.servicemix.samples.wsdl_first.Person"/>
+-->
+
+</beans>
+
