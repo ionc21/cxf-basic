@@ -30,11 +30,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetPersonResponse }
+     * Create an instance of {@link GetPerson }
      * 
      */
-    public GetPersonResponse createGetPersonResponse() {
-        return new GetPersonResponse();
+    public GetPerson createGetPerson() {
+        return new GetPerson();
     }
 
     /**
@@ -46,11 +46,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetPerson }
+     * Create an instance of {@link GetPersonResponse }
      * 
      */
-    public GetPerson createGetPerson() {
-        return new GetPerson();
+    public GetPersonResponse createGetPersonResponse() {
+        return new GetPersonResponse();
     }
 
 }

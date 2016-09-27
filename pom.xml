@@ -8,6 +8,10 @@
     <packaging>bundle</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>Apache ServiceMix :: CXF WSDL First OSGi Bundle</name>
+    
+    <properties>
+    	<canel.version>2.12.0.redhat-611412</canel.version>
+    </properties>
 
     <dependencies>
         <dependency>
